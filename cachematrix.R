@@ -1,7 +1,11 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## input is a matrix, output is a list of four functions
+## set sets the value of the matrix
+## get gets the value of the matrix
+## setinverse sets the inverse of the matrix
+## getinverse gets the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -10,7 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
         inv <<- NULL
     }
     get <- function() x
-    setinverse <- function(inverse) inv <<- inverse
+    setinverse <- function(solve) inv <<- solve
     getinverse <- function() inv
     list(set = set, get = get,
          setinverse = setinverse,
